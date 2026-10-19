@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Juicy Spa &amp; Beauty Center | Abu Dhabi</title>
+<meta name="description" content="La Juicy Spa and Beauty Center, Abu Dhabi. Massage, facials, hair, nails and body care. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+/* Concept: freshly squeezed. Peach skin, tangerine, a leaf green. Everything rounded and juicy, a citrus you can squeeze. */
+:root{--peach:#FFE9DC;--cream:#FFF8F1;--tang:#FF7A1A;--pink:#FF5C7A;--leaf:#1E5B3A;--ink:#2B1A12;--mute:#8A6E60;--line:rgba(43,26,18,.12);
+--serif:'Young Serif',Georgia,serif;--sans:'Outfit',system-ui,sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit}p{max-width:54ch}
+.wrap{max-width:1220px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:.98;letter-spacing:-.025em;text-wrap:balance}
+h1 em,h2 em{font-style:normal;color:var(--tang)}
+:focus-visible{outline:3px solid var(--tang);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn svg{width:18px;height:18px}
+.btn-t{background:var(--tang);color:#fff;box-shadow:0 12px 26px -10px rgba(255,122,26,.7)}.btn-l{background:var(--leaf);color:#fff}.btn-o{box-shadow:inset 0 0 0 1.5px var(--ink)}
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,248,241,.88);backdrop-filter:blur(10px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{text-decoration:none;font-family:var(--serif);font-size:26px;display:flex;align-items:center;gap:8px}
+.logo i{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#FFB15C,var(--tang));position:relative}
+.logo i::after{content:"";position:absolute;top:-6px;right:2px;width:12px;height:8px;border-radius:0 100% 0 100%;background:var(--leaf)}
+.logo small{font-family:var(--sans);font-size:13px;color:var(--mute)}
+.menu{display:flex;gap:26px;font-size:15px;font-weight:500}.menu a{text-decoration:none;color:var(--mute)}.menu a:hover{color:var(--ink)}
+.nav .btn{padding:10px 18px;font-size:14px}
+.hero{background:radial-gradient(70% 70% at 75% 40%,#FFD2B5,var(--cream) 70%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding-block:clamp(40px,6vw,80px)}
+.hero-copy{min-width:0}
+.pill{display:inline-block;background:#fff;border-radius:999px;padding:7px 14px;font-weight:500;font-size:14px;color:var(--leaf)}
+.hero h1{font-size:clamp(56px,8.2vw,128px);margin:20px 0}
+.hero .lead{color:var(--mute);font-size:clamp(17px,1.5vw,20px);max-width:38ch;margin-bottom:28px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.stage{position:relative;aspect-ratio:1/1;min-width:0}
+#fruit{position:absolute;inset:0;width:100%;height:100%;cursor:pointer}
+.stage .hint{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);background:#fff;border-radius:999px;padding:8px 14px;font-weight:500;font-size:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(43,26,18,.1)}
+.drops{position:absolute;top:6%;right:4%;font-family:var(--serif);font-size:20px;text-align:right}
+.drops b{display:block;font-size:44px;color:var(--tang);line-height:1}
+section{padding-block:clamp(70px,9vw,120px)}
+.hd{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:end;margin-bottom:clamp(30px,4vw,50px)}
+.hd h2{font-size:clamp(42px,5.8vw,90px)}.hd p{color:var(--mute)}
+.menu-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.m{border-radius:32px;padding:30px;display:flex;flex-direction:column;gap:10px;text-decoration:none;min-height:300px;min-width:0;transition:transform .3s var(--ease)}
+.m:hover{transform:translateY(-6px) rotate(-.6deg)}
+.m .e{font-size:44px;line-height:1}
+.m h3{font-size:clamp(30px,2.8vw,40px)}.m p{opacity:.8;font-size:16px}
+.m .go{margin-top:auto;font-weight:700}
+.m1{background:#FFD8BF}.m2{background:#FFC7CF}.m3{background:#FFE6A6}.m4{background:#CFE8D4}.m5{background:#F6D5F0}.m6{background:var(--leaf);color:#fff}
+.mood{background:var(--leaf);color:var(--cream)}
+.mood .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.mood h2{font-size:clamp(44px,6vw,92px)}.mood h2 em{color:#FFB15C}
+.mood p{opacity:.85;margin-top:16px}
+.moods{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mo{background:rgba(255,248,241,.08);border:1.5px solid rgba(255,248,241,.2);border-radius:22px;padding:20px;cursor:pointer;text-align:left;font:inherit;color:inherit;transition:background .3s,border-color .3s}
+.mo b{font-family:var(--serif);font-weight:400;font-size:24px;display:block}
+.mo span{font-size:14px;opacity:.8}
+.mo[aria-pressed="true"]{background:var(--tang);border-color:var(--tang)}
+.rec{grid-column:1/-1;background:var(--cream);color:var(--ink);border-radius:22px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.rec p{margin:0;font-family:var(--serif);font-size:22px;opacity:1}
+.ritual{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.st{background:#fff;border-radius:28px;padding:28px;min-width:0}
+.st b{font-family:var(--serif);font-size:58px;line-height:1;color:var(--pink);display:block}
+.st h3{font-size:28px;margin:10px 0 6px}.st p{color:var(--mute);font-size:16px}
+.book{background:var(--peach)}
+.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start}
+.book h2{font-size:clamp(46px,6.4vw,100px);margin-bottom:22px}
+.r{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.r span{font-weight:700;color:var(--tang)}
+form{background:#fff;border-radius:32px;padding:clamp(22px,4vw,36px);display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0;box-shadow:0 30px 60px -30px rgba(43,26,18,.25)}
+form h3{grid-column:1/-1;font-size:32px}
+label{display:grid;gap:6px;font-weight:500;font-size:14px;color:var(--mute)}
+input,select{font:inherit;font-weight:400;font-size:16px;padding:13px 14px;border-radius:16px;border:1.5px solid var(--line);background:var(--cream);width:100%;color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--tang)}
+form .btn{grid-column:1/-1;justify-content:center}
+footer{background:var(--leaf);color:#D4E6D9;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:24px}
+.dock{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;transform:translateY(160%);transition:transform .5s var(--ease)}
+.dock.show{transform:none}
+@media (max-width:980px){.menu{display:none}.hero .wrap,.hd,.mood .wrap,.book .wrap{grid-template-columns:1fr}.stage{max-width:440px;width:100%;margin:0 auto}.menu-g{grid-template-columns:1fr 1fr}.ritual{grid-template-columns:1fr}}
+@media (max-width:560px){.menu-g,form,.moods{grid-template-columns:1fr}.m{min-height:0}.r{grid-template-columns:1fr;gap:2px}.nav .btn span{display:none}.logo small{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.5 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol></svg>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top"><i></i>La Juicy<small>Spa &amp; Beauty</small></a>
+  <nav class="menu" aria-label="Main"><a href="#menu">Treatments</a><a href="#mood">Your mood</a><a href="#book">Book</a></nav>
+  <a class="btn btn-t wa" data-msg="Hi La Juicy! I'd like to book a treatment." href="#"><svg><use href="#wa"/></svg><span>Book</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="pill">🍊 Spa &amp; Beauty · Abu Dhabi</span>
+      <h1>Come in tired. Leave <em>juicy.</em></h1>
+      <p class="lead">Massage, facials, hair and nails, all under one roof. The kind of glow you can't buy in a bottle.</p>
+      <div class="ctas">
+        <a class="btn btn-t wa" data-msg="Hi La Juicy! I'd like to book a treatment." href="#"><svg><use href="#wa"/></svg>Book my glow</a>
+        <a class="btn btn-o" href="#menu">See treatments</a>
+      </div>
+    </div>
+    <div class="stage">
+      <canvas id="fruit" aria-label="A 3D orange. Tap to squeeze it."></canvas>
+      <div class="drops">Squeezes<b id="sq">0</b></div>
+      <span class="hint">Tap to squeeze 🍊</span>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="hd"><h2>Pick your <em>flavour.</em></h2><p>Tap any treatment and we'll reply on WhatsApp with times.</p></div>
+    <div class="menu-g">
+      <a class="m m1 wa" data-msg="Hi La Juicy, I'd like to book a massage." href="#"><span class="e">💆‍♀️</span><h3>Massage</h3><p>Relaxing or deep tissue. Melt the week away.</p><span class="go">Book massage →</span></a>
+      <a class="m m2 wa" data-msg="Hi La Juicy, I'd like to book a facial." href="#"><span class="e">✨</span><h3>Facials</h3><p>Deep clean, hydrate, glow. Skin that looks rested.</p><span class="go">Book facial →</span></a>
+      <a class="m m3 wa" data-msg="Hi La Juicy, I'd like to book a hair appointment." href="#"><span class="e">💇‍♀️</span><h3>Hair</h3><p>Cut, colour, blow-dry and treatments.</p><span class="go">Book hair →</span></a>
+      <a class="m m4 wa" data-msg="Hi La Juicy, I'd like to book nails." href="#"><span class="e">💅</span><h3>Nails</h3><p>Manicure, pedicure, gel and nail art.</p><span class="go">Book nails →</span></a>
+      <a class="m m5 wa" data-msg="Hi La Juicy, I'd like to book body care / scrub." href="#"><span class="e">🧴</span><h3>Body care</h3><p>Scrubs and treatments for soft, smooth skin.</p><span class="go">Book body care →</span></a>
+      <a class="m m6 wa" data-msg="Hi La Juicy, I'd like to book a bridal / event package." href="#"><span class="e">👰</span><h3>Bridal &amp; events</h3><p>Hair, makeup and nails for your big day.</p><span class="go">Ask about packages →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="mood" id="mood">
+  <div class="wrap">
+    <div><h2>How are you <em>feeling</em> today?</h2><p>Pick your mood. We'll suggest the treatment for it.</p></div>
+    <div class="moods" role="group" aria-label="Mood">
+      <button class="mo" data-r="A relaxing massage" aria-pressed="true"><b>Stressed</b><span>Shoulders up to my ears</span></button>
+      <button class="mo" data-r="A hydrating facial" aria-pressed="false"><b>Dull</b><span>My skin needs a wake-up</span></button>
+      <button class="mo" data-r="Mani, pedi and a blow-dry" aria-pressed="false"><b>Going out</b><span>Need to look good, fast</span></button>
+      <button class="mo" data-r="A full pamper day" aria-pressed="false"><b>Deserve it</b><span>Treat me, all of it</span></button>
+      <div class="rec"><p id="rec">We'd suggest: A relaxing massage</p><a class="btn btn-t wa" id="recB" data-msg="Hi La Juicy! I'm feeling stressed. I'd like: A relaxing massage." href="#"><svg><use href="#wa"/></svg>Book it</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd"><h2>Your visit, <em>simply.</em></h2><p>No complicated booking system. Just a message.</p></div>
+    <div class="ritual">
+      <div class="st"><b>1</b><h3>Message us</h3><p>Tell us the treatment and a time that suits you.</p></div>
+      <div class="st"><b>2</b><h3>Come in</h3><p>Relax. Have a drink. We'll take it from here.</p></div>
+      <div class="st"><b>3</b><h3>Glow</h3><p>Leave feeling lighter, fresher and a little bit juicy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book your <em>squeeze.</em></h2>
+      <div class="r"><span>Where</span><div>Abu Dhabi</div></div>
+      <div class="r"><span>For</span><div>Massage, face, hair, nails, body</div></div>
+      <div class="r"><span>Booking</span><div>WhatsApp, fastest reply</div></div>
+      <a class="btn btn-o" style="margin-top:24px" href="https://www.google.com/maps/search/?api=1&query=La+Juicy+Spa+and+Beauty+Center+Abu+Dhabi" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <form id="bk">
+      <h3>Request a time</h3>
+      <label for="bS">Treatment<select id="bS"><option>Massage</option><option>Facial</option><option>Hair</option><option>Nails</option><option>Body care</option><option>Bridal / event</option></select></label>
+      <label for="bD">Day<input id="bD" type="date"></label>
+      <label for="bT">Time<select id="bT"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+      <label for="bN">Name<input id="bN" type="text" autocomplete="name"></label>
+      <button class="btn btn-t" type="submit"><svg><use href="#wa"/></svg>Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 La Juicy Spa &amp; Beauty Center · Abu Dhabi</span><span>Fresh beauty, every day</span></div></footer>
+<div class="dock" id="dock"><a class="btn btn-t wa" data-msg="Hi La Juicy! I'd like to book a treatment." href="#"><svg><use href="#wa"/></svg>Book my glow</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var PHONE='971500000000'; // TODO: real WhatsApp number
+  function url(m){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(m)}
+  function bind(a){a.href=url(a.dataset.msg);a.target='_blank';a.rel='noopener'}
+  document.querySelectorAll('.wa').forEach(bind);
+  var dock=document.getElementById('dock');addEventListener('scroll',function(){dock.classList.toggle('show',scrollY>innerHeight*.8)},{passive:true});
+  var d=document.getElementById('bD');d.value=new Date().toISOString().slice(0,10);d.min=d.value;
+  document.getElementById('bk').addEventListener('submit',function(e){e.preventDefault();var v=function(i){return document.getElementById(i).value||'-'};
+    window.open(url('Hi La Juicy! Booking request:\nTreatment: '+v('bS')+'\nDay: '+v('bD')+' ('+v('bT')+')\nName: '+v('bN')),'_blank','noopener')});
+  var mos=document.querySelectorAll('.mo'),rec=document.getElementById('rec'),recB=document.getElementById('recB');
+  mos.forEach(function(b){b.addEventListener('click',function(){mos.forEach(function(o){o.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
+    rec.textContent='We\'d suggest: '+b.dataset.r;recB.dataset.msg='Hi La Juicy! I\'m feeling '+b.querySelector('b').textContent.toLowerCase()+'. I\'d like: '+b.dataset.r+'.';bind(recB)})});
+
+  if(!window.THREE)return;
+  var canvas=document.getElementById('fruit'),stage=canvas.parentElement,sqEl=document.getElementById('sq');
+  try{
+    var R=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    R.setPixelRatio(Math.min(devicePixelRatio,2));R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;
+    var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(30,1,.1,100);C.position.set(0,1,11);C.lookAt(0,0,0);
+    function col(h){return new THREE.Color(h).convertSRGBToLinear()}
+    var env=new THREE.Scene();env.add(new THREE.Mesh(new THREE.BoxGeometry(30,30,30),new THREE.MeshBasicMaterial({color:col(0xFFE2CF),side:THREE.BackSide})));
+    function panel(w,h,x,y,z,c,i){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:col(c).multiplyScalar(i),side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
+    panel(12,3,0,8,4,0xffffff,2.4);panel(3,10,-9,0,4,0xFFF4E8,1.8);panel(3,10,9,0,2,0xFF5C7A,1.2);
+    var pm=new THREE.PMREMGenerator(R);S.environment=pm.fromScene(env,.03).texture;
+    var kl=new THREE.DirectionalLight(col(0xFFF0E0),1.2);kl.position.set(3,6,5);S.add(kl);
+    // peel bump via vertex noise
+    function peelGeo(phiS,phiL){var g=new THREE.SphereGeometry(1.8,96,64,0,Math.PI*2,phiS,phiL),p=g.attributes.position,v=new THREE.Vector3();
+      for(var i=0;i<p.count;i++){v.fromBufferAttribute(p,i);var n=Math.sin(v.x*18)*Math.sin(v.y*18)*Math.sin(v.z*18)*.012;v.multiplyScalar(1+n);p.setXYZ(i,v.x,v.y,v.z)}g.computeVertexNormals();return g}
+    var peel=new THREE.MeshPhysicalMaterial({color:col(0xFF7A1A),roughness:.45,clearcoat:.6,clearcoatRoughness:.3,side:THREE.DoubleSide});
+    var F=new THREE.Group();S.add(F);
+    var top=new THREE.Group(),bot=new THREE.Group();F.add(top);F.add(bot);
+    top.add(new THREE.Mesh(peelGeo(0,Math.PI/2),peel));bot.add(new THREE.Mesh(peelGeo(Math.PI/2,Math.PI/2),peel));
+    // flesh face: segments on a disc
+    function flesh(sign){var g=new THREE.Group();
+      var pith=new THREE.Mesh(new THREE.CircleGeometry(1.76,64),new THREE.MeshStandardMaterial({color:col(0xFFF1DC),roughness:.8}));pith.rotation.x=sign*Math.PI/2;g.add(pith);
+      var segM=new THREE.MeshPhysicalMaterial({color:col(0xFF9A2E),roughness:.15,transmission:.35,thickness:.4,clearcoat:1,clearcoatRoughness:.05});
+      for(var i=0;i<10;i++){var a0=i/10*Math.PI*2+.04,a1=(i+1)/10*Math.PI*2-.04;var sh=new THREE.Shape();sh.moveTo(Math.cos(a0)*.14,Math.sin(a0)*.14);
+        for(var k=0;k<=8;k++){var a=a0+(a1-a0)*k/8;sh.lineTo(Math.cos(a)*1.58,Math.sin(a)*1.58)}sh.lineTo(Math.cos(a1)*.14,Math.sin(a1)*.14);
+        var seg=new THREE.Mesh(new THREE.ShapeGeometry(sh),segM);seg.rotation.x=sign*Math.PI/2;seg.position.y=-sign*.01;g.add(seg)}
+      return g}
+    var fT=flesh(1);fT.rotation.x=Math.PI;top.add(fT);var fB=flesh(-1);fB.rotation.x=Math.PI;bot.add(fB);
+    fT.rotation.x=0;fT.children.forEach(function(c){c.rotation.x=Math.PI/2});
+    fB.rotation.x=0;fB.children.forEach(function(c){c.rotation.x=-Math.PI/2});
+    // leaf + stem
+    var leaf=new THREE.Mesh(new THREE.SphereGeometry(.5,24,12),new THREE.MeshPhysicalMaterial({color:col(0x2E7A4A),roughness:.4,clearcoat:.6}));leaf.scale.set(1,.12,.45);leaf.position.set(.45,1.82,0);leaf.rotation.z=.4;top.add(leaf);
+    var stem=new THREE.Mesh(new THREE.CylinderGeometry(.06,.08,.25,10),new THREE.MeshStandardMaterial({color:col(0x5B3A1E)}));stem.position.y=1.85;top.add(stem);
+    // droplets
+    var dropM=new THREE.MeshPhysicalMaterial({color:col(0xFFB347),roughness:0,transmission:.8,thickness:.3,clearcoat:1,transparent:true});
+    var drops=[];for(var i=0;i<40;i++){var dr=new THREE.Mesh(new THREE.SphereGeometry(.07+Math.random()*.06,16,12),dropM);dr.visible=false;dr.userData.v=new THREE.Vector3();S.add(dr);drops.push(dr)}
+    F.rotation.set(.35,0,.12);
+    function size(){var w=canvas.clientWidth,h=canvas.clientHeight;if(!w)return;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+    size();addEventListener('resize',size);
+    var open=0,target=0,squish=0,count=0,mx=0;
+    addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5});
+    function squeeze(){squish=1;count++;sqEl.textContent=count;if(count===1)target=1;
+      drops.forEach(function(dr){dr.visible=true;dr.position.set((Math.random()-.5)*.8,(Math.random()-.5)*.3,(Math.random()-.5)*.8);var a=Math.random()*6.28;dr.userData.v.set(Math.cos(a)*(.04+Math.random()*.06),.05+Math.random()*.08,Math.sin(a)*(.04+Math.random()*.06))})}
+    canvas.addEventListener('click',squeeze);
+    setTimeout(function(){if(!count)squeeze()},1800);
+    var visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,t0=performance.now();
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(stage);
+    (function loop(t){requestAnimationFrame(loop);if(!visible)return;var tt=(t-t0)/1000;
+      open+=(target-open)*.06;squish*=.88;
+      top.position.y=open*1.1;top.rotation.x=-open*.5;bot.position.y=-open*.6;bot.rotation.x=open*.25;
+      F.scale.set(1+squish*.12,1-squish*.16,1+squish*.12);
+      drops.forEach(function(dr){if(!dr.visible)return;dr.userData.v.y-=.004;dr.position.add(dr.userData.v);if(dr.position.y<-3.5)dr.visible=false});
+      F.rotation.y=(reduce?0:tt*.35)+mx*.6;
+      R.render(S,C)})(t0);
+  }catch(err){console.warn(err)}
+})();
+</script>
+</body>
+</html>
